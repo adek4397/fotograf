@@ -1,0 +1,277 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Lato;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header_top{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.header_top a{
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.header_botom{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_botom h1{
+    font-family: Righteous;
+    font-size: 72px;
+    font-weight: 700;
+
+    margin: 10px;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    z-index: 90;
+    margin: 0;
+    border: none;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+nav ul li{
+    margin: 15px;
+    padding: 0;
+}
+
+.icon-menu{
+    font-size: 35px;
+    display: none;
+}
+
+@media screen and (min-width: 651px) {
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }    
+}
+
+@media screen and (max-width: 650px) {
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+    }
+
+    .icon-menu{
+        display: block;
+    }
+
+    .icon-menu:hover{
+        cursor: pointer;
+    }
+    
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    margin: 5px;
+    padding: 15px;
+    font-family: Work Sans;
+}
+
+nav ul li a:hover{
+    cursor: pointer;
+}
+
+.activeLink{
+    font-weight: 700;
+}
+
+.gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.gallery img{
+    width: 368px;
+    height: 500px;
+    margin: 15px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.gallery img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.full_img{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.full_img img{
+    width: 90%;
+    max-width: 600px;
+}
+
+.full_img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: white;
+    font-size: 30px;
+}
+
+.full_img span:hover{
+    cursor: pointer;
+}
+
+.container article{
+    width: 90%;
+
+    font-family: Work Sans;
+    font-size: 16px;
+}
+
+.container article img{
+    width: 100%;
+}
+
+.templately{
+    width: 100%;
+    height: 60vh;
+}
+
+.contact_form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_form p{
+    width: 100%;
+    font-weight: 400;
+}
+
+article .input{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.input label{
+    font-weight: 700;
+    /* margin: 5px 0px; */
+}
+
+.input input,
+.input textarea{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+    margin: 5px 0px 15px 0px ;
+}
+
+.input input:focus,
+.input textarea:focus{
+    outline: none;
+    border: 1px solid skyblue;
+    box-shadow: 0px 0px 10px 0px skyblue;
+}
+
+.contact_form button{
+    width: 10%;
+    padding: 8px;
+    margin: 5px 0px 9vh 0;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    border-top: 1px solid lightgray;
+    margin-top: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
