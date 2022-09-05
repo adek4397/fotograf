@@ -187,7 +187,8 @@ nav ul li a:hover{
 
 .full_img img{
     width: 90%;
-    max-width: 600px;
+    max-width: 500px;
+    
 }
 
 .full_img span{
